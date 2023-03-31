@@ -14,8 +14,11 @@ If you do find it helpful I would greatly appreciate a donation of any size.
 It would encourage me to continue development and enable support for other trading platforms as well.
 
 Bitcoin - 179BSmdDiqbCACmz5yDpVYynhh3g5GQ4tf
+
 DOGE - DBvGe8trgKTCA9dHoxv6pC4s2mVNniXE4d
+
 ETH (ERC20) - 0xbfbac763bdf69bc29e73afdff7f1680247dc52dd
+
 LTC - LgfH9MJfu35K84CqVLjJhE5BuRwDLyLKc7
 
 Robinhood or TD Ameritrade for stocks, commodities, and fiat would be fun for me =)
