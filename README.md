@@ -27,3 +27,7 @@ I have no idea what the optimal settings are for profit unfortunately, but you d
 
 This YouTube video helped me understand how a grid bot works:
 https://www.youtube.com/watch?v=oV_xQFBCM3M
+
+Quick note about the API key pairs you will have to generate at Binance.us - by default the API key pair should not have withdrawal access.  Withdrawal access is not required for this program and I strongly recommend against ever enabling withdrawal access for any key pairs!
+
+Please note that you want at least double the amount of BTC/USD in your account than is required to place the original 200 orders.  Imagine if the price just moves straight up or down the 100 buy orders can turn in to 100 new sell orders and vice versa.
