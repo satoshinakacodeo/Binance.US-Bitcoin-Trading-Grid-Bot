@@ -1,8 +1,6 @@
 import time
 import ccxt
-
-sell_order = "null"
-buy_order = "null"
+print("Starting program...")
 
 exchange = ccxt.binanceus({
     'apiKey': 'API KEY HERE',
@@ -11,16 +9,17 @@ exchange = ccxt.binanceus({
 })
 
 pair = 'BTC/USD'
-price_range = 25
+price_range = 7
 num_grids = 100
 quantity = 0.00066
 
-total_trades = 0
 total_buys = 0
 total_sells = 0
 buy_dollars = 0
 sell_dollars = 0
 last_profit = 0
+sell_order = "null"
+buy_order = "null"
 while True:   
     try:
         orders = exchange.fetch_open_orders(symbol='BTC/USD')
@@ -58,8 +57,7 @@ while True:
             successful_orders.add(sell_order['id'])
             print(f'NEW GRID --> BUY at {buy_price}')
             print(f'NEW GRID --> SELL at {sell_price}')
-            time.sleep(.05)
-    loop_time = the_time = int(time.time())        
+            time.sleep(.05)      
     print('')
     print(f'price_range = {price_range}    num_grids = {num_grids}   quantity = {quantity}      Profit per Grid = ${price_range*quantity}    Grid RANGE = {current_price+(price_range*num_grids)} - {current_price-(price_range*num_grids)}')    
     print('')
@@ -110,6 +108,7 @@ while True:
                         if (total_buys == total_sells):
                                 print(f'Profit = {round((sell_dollars-buy_dollars),2)}')
                                 last_profit = sell_dollars-buy_dollars
+                    time.sleep(1)
             time.sleep(2)
         except Exception as e:
             print('An error occurred:', e)
