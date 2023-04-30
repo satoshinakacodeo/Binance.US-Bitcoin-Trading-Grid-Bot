@@ -1,11 +1,15 @@
 # Binance.US-Bitcoin-Trading-Grid-Bot
 Trading Bitcoin involves risk.  The author of the program is not responsible for any losses you may incur.
 
-There may be bugs in the code!  I appreciate any fixes or improvement suggestions.
+There is a bug in the code that causes the grid to break down over time.  There should always be 200 orders open.
 
-I created this python program because I could not find any free options.  I had to either pay a monthly fee, or per trade!
+Over time I notice the total number of open orders drop and I am not sure what is causing it or how to prevent it.
 
-It did take significant effort on my part mostly since I had not written a computer program in about 20 years!
+Can stress test the code by making the grid size very small.  I don't see any exceptions being thrown.
+
+I will pay $50 USD in DOGE to the first person to fix this code so it maintains 200 open orders indefinetly.
+
+I created this python program because I could not find any free options.  I had to either pay a monthly fee, or per trade.
 
 I am offering it online for free because I think others may find it helpful.
 
@@ -15,13 +19,9 @@ Bitcoin - 179BSmdDiqbCACmz5yDpVYynhh3g5GQ4tf
 
 DOGE - DBvGe8trgKTCA9dHoxv6pC4s2mVNniXE4d
 
-ETH (ERC20) - 0xbfbac763bdf69bc29e73afdff7f1680247dc52dd
-
 LTC - LgfH9MJfu35K84CqVLjJhE5BuRwDLyLKc7
 
 It will encourage me to continue development and enable support for other trading platforms as well.
-
-Robinhood or TD Ameritrade for stocks, commodities, and fiat would be fun for me =)
 
 I have no idea what the optimal settings are for profit unfortunately, but you don't want the price of Bitcoin to escape the grid range.  Grid trading isn't really optimal for Bitcoin due to the large swings.  Market tanks and the program will load you up on Bitcoin.  Market takes off and the program will take profits too soon and unload your Bitcoin.  I have found the profits to be very low and wonder if the few dollars is worth missing out on the big pumps and getting extra exposure for the crashes...
 
